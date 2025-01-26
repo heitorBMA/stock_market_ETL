@@ -1,0 +1,34 @@
+{
+    "stocks": {
+        "stock1": {
+            "name":"PepsiCo Inc",
+            "code": "PEP"
+        },
+        "stock2": {
+            "name":"Pfizer",
+            "code": "PFE"
+        },
+        "stock3": {
+            "name":"AT&T Inc",
+            "code": "T"
+        },
+        "stock4": {
+            "name":"Verizon",
+            "code": "VZ"
+        }
+    },
+    "conversions": {
+        "real_to_dolar": {
+            "from_currency": "BRL",
+            "to_currency": "USD"
+        },
+        "dolar_to_euro": {
+            "from_currency": "USD",
+            "to_currency": "EUR"
+        },
+        "real_to_euro": {
+            "from_currency": "BRL",
+            "to_currency": "EUR"
+        }
+    }
+}
