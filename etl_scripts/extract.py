@@ -14,6 +14,9 @@ load_dotenv()
 # Load the API KEY stored at the .env file
 API_KEY = os.getenv('API_KEY')
 
+# Set working diretory
+cwd = os.getcwd()
+
 ########################################
 
 """
@@ -41,8 +44,8 @@ def get_currency_exchange_rate(from_currency, to_currency):
     url = "https://www.alphavantage.co/query"
     params = {
         "function": "CURRENCY_EXCHANGE_RATE",
-        "from_currency": "BRL",
-        "to_currency": "USD",
+        "from_currency": from_currency,
+        "to_currency": to_currency,
         "apikey": API_KEY
     }
     response = requests.get(url, params=params)
@@ -199,9 +202,9 @@ if __name__ == "__main__":
 
     # Get stock data
     stock_df = fetch_all_stocks("follow_list.json")
-    stock_df.to_csv("stock_data.csv", index=False)
+    stock_df.to_csv(f"{cwd}/collected_data/stock_data.csv", index=False)
 
     # Get currency data
     currency_df = fetch_currency_data("follow_list.json")
-    currency_df.to_csv("currency_exchange_rates.csv", index=False)
+    currency_df.to_csv(f"{cwd}/collected_data/currency_exchange_rates.csv", index=False)
 

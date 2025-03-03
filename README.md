@@ -17,24 +17,26 @@ This project is focused on:
 ```
 .
 ├── etl_scripts/
-│   ├── extract.py                 # Script for extracting data from the API
-│   ├── transform_and_load.py      # Script for process the data and load it into a MySQL database
+│   ├── extract.py                  # Script for extracting data from the API
+│   ├── transform_and_load.py       # Script for process the data and load it into a MySQL database
 │
 ├── dictionary_of_names/        
-│   ├── digital_currency_list.csv  # csv file with the list of available crypto currencies to collet data
+│   ├── digital_currency_list.csv   # csv file with the list of available crypto currencies to collet data
 │   ├── physical_currency_list.csv  # csv file with the list of available physical currencies to collet data
 │
-├── power_bi_dashboard.pbix        # Power BI file for data visualization
+├── collected_data/            # Folder containing the collected data
 │
-├── follow_list.json               # json file containing the list of stocks and currencies to collect the data
+├── power_bi_dashboard.pbix         # Power BI file for data visualization
 │
-├── .gitgnore                      # gitgnore file to make the .env file be ignored by git
+├── follow_list.json                # json file containing the list of stocks and currencies to collect the data
 │
-├── .env                           # File containing the API credentials (not included in the public repository for data security reasons)
+├── .gitgnore                       # gitgnore file to make the .env file be ignored by git
 │
-├── requirements.txt              # txt file withe the python dependencies
+├── .env                            # File containing the API credentials (not included in the public repository for data security reasons)
 │
-└── README.md                      # Project documentation
+├── requirements.txt                # txt file withe the python dependencies
+│
+└── README.md                       # Project documentation
 ```
 
 ## Key Features
